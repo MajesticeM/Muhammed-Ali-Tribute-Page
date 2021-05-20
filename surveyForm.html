@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="text-center">Please fill in this surey form to proceed to the next level of this application form</p>
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label for="" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="" id="email-label">Email Address</label>
+                <input type="email" id="email" class="form-control"  placeholder="Enter Your Email Address">
+            </div>
+            <div class="form-group">
+                <label for="" id="number-label">Number</label>
+                <input type="number" max="15" min="0" id="number"  placeholder="Enter Your Number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="sel1">Select list:</label>
+                <select id="dropdown" class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                    <label><input type="radio" name="optradio" checked>Option 1</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Option 2</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio" disabled>Option 3</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox" value="Option01">Option 1</label>
+                <label class="checkbox-inline"><input type="checkbox" value="Option02">Option 2</label>
+                <label class="checkbox-inline"><input type="checkbox" value="Option03">Option 3</label>
+              </div>
+              <div class="form-group">
+                <label for="comment">Additional Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+
+              <button type="submit" id="submit" class="btn btn-primary">Submit Form</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
